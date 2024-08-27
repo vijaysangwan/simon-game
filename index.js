@@ -127,8 +127,7 @@ function seqcheck() {
     gameover();
   } else if (JSON.stringify(cc) == JSON.stringify(seq)) {
       console.log("next level");
-      setTimeout(nextlevel(),2000);
-    
+    setTimeout(() => { nextlevel() },800);
   }
 
   console.log(cc);
